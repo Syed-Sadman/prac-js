@@ -70,7 +70,7 @@ function Circle(radius){
 }
 
 const another= new Circle(1);
-*/
+
 
 let arr=[];
 
@@ -92,3 +92,22 @@ while(j>=0){
 }
 let savearr2=arr2;
 console.log(savearr2);
+
+
+var myArr = [ 2, 3, 4, 5, 6];
+
+var total=0;
+for(var i=0;i<myArr.length;i++){
+    total=total+myArr[i];
+}
+console.log(total);
+
+*/
+var arr = [
+    [1,2], [3,4], [5,6]
+  ];
+  for (var i=0; i < arr.length; i++) {
+    for (var j=0; j < arr[i].length; j++) {
+      console.log(arr[i][j]);
+    }
+  }
