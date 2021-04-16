@@ -71,7 +71,7 @@ function Circle(radius){
 
 const another= new Circle(1);
 
-
+///pushing elements in array using while loop
 let arr=[];
 
 let i=0;
@@ -94,6 +94,8 @@ let savearr2=arr2;
 console.log(savearr2);
 
 
+
+//counting sum of an array using for loop
 var myArr = [ 2, 3, 4, 5, 6];
 
 var total=0;
@@ -102,7 +104,7 @@ for(var i=0;i<myArr.length;i++){
 }
 console.log(total);
 
-
+///accessing 2d array elements and using nested for loop to print every element of the array using index
 var arr = [
     [1,2], [3,4], [5,6]
   ];
@@ -113,8 +115,5 @@ var arr = [
   }
 
 
-  function greeting(paramet){
-      console.log("hello world");
-      console.log(paramet);
-  }
-  greeting("welcome to 10 days of js");
+  
+
