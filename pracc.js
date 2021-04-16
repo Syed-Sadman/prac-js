@@ -1,4 +1,4 @@
-/*const nme='sadman';
+const nme='sadman';
 const another=
 `hi ${nme} ${2+4},         
 thank you for helping me out 
@@ -44,11 +44,11 @@ let circle={
     }
  };
 circle.draw();
-*/
+
 
 //2 ways to create an object 1.factory function 2. constructor function 
 //factory function 
-/*
+
 function createCircle(radius){
     return{
         radius,
@@ -102,7 +102,7 @@ for(var i=0;i<myArr.length;i++){
 }
 console.log(total);
 
-*/
+
 var arr = [
     [1,2], [3,4], [5,6]
   ];
@@ -111,3 +111,10 @@ var arr = [
       console.log(arr[i][j]);
     }
   }
+
+
+  function greeting(paramet){
+      console.log("hello world");
+      console.log(paramet);
+  }
+  greeting("welcome to 10 days of js");
