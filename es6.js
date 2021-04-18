@@ -23,14 +23,28 @@
 // };
 // console.log(ess);
 
-let thisar={
-    first:"lek",
-    second:"ked"
-};
+// let thisar={
+//     first:"lek",
+//     second:"ked"
+// };
 
 
-let{first:f,second:l}=thisar;
+// let{first:f,second:l}=thisar;
 
 
-console.log(f);
-console.log(l);
+// console.log(f);
+// console.log(l);
+
+ 
+//traditional way to initialize a function
+function greet(){
+    console.log("hello");
+
+}
+greet();
+//arrow function 
+const gret=()=>{
+    console.log("hello");
+}
+
+gret();
