@@ -113,4 +113,128 @@ let conObj={...obj1,...obj2};
 
 
 
-/// Optional chaining 
+/// 4. Optional chaining 
+// It is represented by ( ?. ) and provides a safe way to access nested object properties, even if an intermediate property doesn't exist 
+
+//for object 
+
+const person={
+    name:"wayne",
+    details:{
+     age:28,
+     address:{
+         city:'gotham'
+     }   
+    }
+};
+
+console.log(
+    person.details &&                           // with optional chaining we don't need to write this much 
+    person.details.address &&
+    person.details.address.city
+)
+
+//with optional chaining 
+console.log(person?.details?.address?.city);
+
+
+// for array 
+const person={
+    name:'bruce',
+    hobbies:[
+        {
+         name: 'crime fighting'   
+    }
+    ]
+}
+
+console.log(
+    person.hobbies &&
+    person.hobbies.length &&
+    person.hobbies[0] &&                //it can be written simply 
+    person.hobbies[0].name
+)
+
+//with optional chaining 
+console.log(person?.hobbies?.[0]?.name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//5. nullish coalescing operator 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 6. Ternery operator /////
+///Main usage in REACT for conditionally rendering with JSX 
+
+//the actual syntax  
+    condition? expressionIfTrue : expressionIfFalse
+
+// Example 
+    const loggedIn=true;
+    const name=loggedIn? "Sadman":"Sabbir";
+    console.log(name);//output will be Sadman as it is in the true value position     
+
+
+
+
+
+//Example in React with ternery operator 
+
+const App = () => {
+    const loggIn=true;
+    return(
+        <div>
+            {  loggIn ? (<span>Viswas</span>) : (<span>Guest</span>)}       </div>   //condition? expressionIfTrue : expressionIfFalse
+    )                                                                       
+}
+
+
+
+
+
+//7. Template literals 
+
+const ehh="Sadman";
+const grt="hello";
+const sport="football";
+
+console.log( grt +' ' + ehh + 'do you like '+ sport + '?');
+
+//using template literals 
+console.log(`${grt}`)
