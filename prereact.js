@@ -237,4 +237,40 @@ const sport="football";
 console.log( grt +' ' + ehh + 'do you like '+ sport + '?');
 
 //using template literals 
-console.log(`${grt}`)
+console.log(`${grt} ${ehh} do you like ${sport}?`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// 8. Arrow functions 
+
+//traditional function 
+function greet(){
+    console.log ("Hello");
+}
+
+//arrow function 
+const greet=()=>{               //const keyword followed by function name and parentheses 
+    console.log("Hello");
+}
+
+
+//traditional function with single parameter 
+function greet(name){
+    console.log(`hello ${name}`);
+}
+
+// arrow with single parameter 
+const greet = name => {
+    console.log(`Hello ${name}`);
+}
