@@ -271,6 +271,45 @@ function greet(name){
 }
 
 // arrow with single parameter 
-const greet = name => {
+const greet = name => {                 // the parameter name doesn't need the parentheses when there is only a single parameter 
     console.log(`Hello ${name}`);
 }
+
+
+
+//traditional function with implicit return 
+function getName(){
+    return "Sabbir";
+}
+
+// arrow function for implicit return 
+const getName = () => "Sabbir"                        // more precise and short code 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 9. import and Export statement 
+
+
