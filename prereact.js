@@ -313,3 +313,39 @@ const getName = () => "Sabbir"                        // more precise and short 
 // 9. import and Export statement 
 
 
+/////////Named Exports 
+///consider the filename is file1.js
+
+const firstname="wayne";
+const lastname="bruce";
+
+export{ firstname, lastname};
+
+
+//export can be inlined 
+
+
+export const firstname="wayne";
+export const lastname="bruce";
+
+
+/////////////exporting completes////////////
+
+//now time to import these file1.js file 
+
+
+import {firstname,lastname} from './file1.js'
+
+console.log(firstname);//output "wayne "
+
+//we can import all the files that are used for export using * sign 
+
+import * as person from './file1.js'   ///it will import everything as "person" from file1 
+
+console.log(person.firstname);// output "wayne" 
+
+
+
+//if export file have same name then we need to use iliess 
+import {firstname as username} from './file1'
+console.log(username);// wayne output 
