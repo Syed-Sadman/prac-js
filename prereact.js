@@ -348,4 +348,4 @@ console.log(person.firstname);// output "wayne"
 
 //if export file have same name then we need to use iliess 
 import {firstname as username} from './file1'
-console.log(username);// wayne output 
+console.log(username);// wayne out 
