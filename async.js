@@ -1,4 +1,4 @@
-const processOrder=(customer)=>{
+/*const processOrder=(customer)=>{
     console.log("Processing order for customer 1");
     var currentTIme=new Date().getTime();
     while(currentTIme + 3000 >= new Date().getTime());          /// this loop is used for 3 sec delay 3000 milisecond from current time 
@@ -12,4 +12,41 @@ processOrder();             /// then there will be a delay of 3 sec for calling 
                             // order processed for customer 1 will be displayed at this point after 3 sec delay (ref: Line 6);
 
 console.log("completed order for customer 1");//lastly this line will be printed to console 
+
+
+
+
+
+
+
+/// we can write the above code using built in function called "setTimeout(()=>{},time in millisecond"
+
+const processOrder=(customer)=>{
+    console.log("Processing order for customer 1");
+    setTimeout(()=>{
+        console.log("cooking completed");
+    },3000);
+
+    console.log("Order processed for customer 1");
+};
+
+console.log("takes order for customer 1");
+processOrder();
+console.log("Completed order for customer 1");
+
+
+
+*/
+
+
+
+//using callback in 
+
+const orderTrack=(customer,callback)=>{
+    console.log(`Order received for ${customer}`);
+    callback(customer);
+}
+
+
+console.log(orderTrack("customer1",''));
 
