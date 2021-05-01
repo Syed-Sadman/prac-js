@@ -42,11 +42,32 @@ console.log("Completed order for customer 1");
 
 //using callback in 
 
-const orderTrack=(customer,callback)=>{
+const takeOrder=(customer,callback)=>{
     console.log(`Order received for ${customer}`);
-    callback(customer);
+     callback(customer);
 }
 
 
-console.log(orderTrack("customer1",''));
+const processOrder=(customer,callback)=>{
+    console.log(`Order processed for ${customer}`);
 
+
+setTimeout(()=>{
+    console.log(`cooking completed`);
+    console.log(`order processed for ${customer}`);
+    callback(customer);
+
+},3000);
+}
+
+const completeOrder=(customer)=>{
+    console.log(`completed order for ${customer}`);
+
+}
+
+
+takeOrder("customer1",(customer)=>{
+    processOrder(customer,(customer)=>{
+        completeOrder(customer);
+    })
+});
