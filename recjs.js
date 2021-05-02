@@ -1,13 +1,18 @@
+let p= new Promise((resolve,reject)=>{
+    let a=1+2
+    if(a==2){
+        resolve("valid");
+    }
+    else{
+        reject("invalid")
+    }
+});
 
 
-//Rest spread in a function call
+p.then((mes)=>{
+    console.log(`this is the resolve  ${mes}`);
+})
 
-function magic(...nums){
-    let sum=0;
-    nums.filter(n=>n%2==0).map(el=>sum+=el);
-    return sum;
-
-}
-console.log(magic(1,2,3,4,5,6));
-//ends
-
+.catch((mes)=>{
+    console.log(`this is the catch  ${mes}`);
+})

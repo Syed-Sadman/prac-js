@@ -1,8 +1,20 @@
-var num1=23;
-var num2=25;
+// var num1=23;
+// var num2=25;
 
-var sum=function(){
-    return num1+num2;
+// var sum=function(){
+//     return num1+num2;
+// }
+
+// console.dir(sum());
+
+function stopWatch(){
+    var startTime=Date.now;
+    function getDelay(){
+        console.log(Date.now - startTime);
+    }
+    return getDelay;
 }
 
-console.dir(sum);
+
+var timer=stopWatch();
+console.log(timer());
