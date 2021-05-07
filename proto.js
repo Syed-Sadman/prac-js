@@ -49,6 +49,7 @@ Person.prototype={
     sleep(){
         console.log("person is sleeping")
     }
+    
 
 };
 
