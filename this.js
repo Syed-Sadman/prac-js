@@ -28,20 +28,20 @@
 //2. explicit bindings 
 
 var printNm=function(){
-    console.log(this.naam);
-} 
+    console.log(`${this.name} is ${this.age} years old and he is ${v}`);
+}; 
 
 
 
 
 var sakib={
-    naam:"Shakib",
+    name:"Shakib",
     age:34
 };
 
+var v=['meritorious', 'humble','allrounder'];
 
-printNm.call(sakib);                    //function.call(object name)  
-
-
+let p=printNm.bind(sakib,v);
+p();
 
 //3. new binding /////same as prototype new constructor 
